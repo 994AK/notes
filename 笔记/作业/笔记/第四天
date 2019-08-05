@@ -1,0 +1,123 @@
+- 背景，边框，列表，链接相关属性
+
+​      背景属性：
+
+1. background属性可以调为速写
+
+   ```css
+   /*background速写*/
+   background:背景颜色/渐变/显示/背景位置
+   /*background颜色*/
+   background-color:red
+   /*background位置*/
+   background-position:0,0 图像显示在左上角
+   /*background重复了怎么办？*/
+   background-repeat:no-repeat 只显示一次
+   /*background调正大小*/
+   background-size:多少px尼？
+   ```
+
+2. 边框属性：
+
+   ```css
+   /*我们来一套普通的写法*/
+   border里面的属性有：border-top|right|bottom|left可以分别设置边界的一则的宽度，样式，颜色
+   
+   border里面的元素还有：border-width|style|color可以分比别设置
+   宽度|样式|颜色
+   
+   还可以单独三个属性中的一个并且设置其中的一则边界生效。
+   border-top-width|border-top-style|border-top-color`等等
+   
+   /*边框的图片*/
+   border-image-source: url(border-image.png);
+   
+   /*设置半径怎么做？*/
+   border-raius:50%就圆了哦
+   
+   还有简写呢
+   border-image-source: url(border-image.png);
+   border-image-slice: 40; //设置所需大小的切片
+   border-image-repeat: round;// 边的图像被重复，直到边界被填满
+   ```
+
+3. 列表:
+
+   ```css
+   /*我们都知道ul ol吧？*/
+   /*处理列表间距*/
+   mozilla为1.5 rem与段落（p）和列表项目（li））相同
+   /*列表特定样式*/
+list-style-type:none/circle/upper-alpha/lower-latin
+   /*不显示列表的标记/空心的圆点/小写的abc/大写的ABC*/
+
+   还有还有：
+   /*列表项目条目则位于行内*/
+   list-style-position:inside
+   
+   好了没有了。
+   
+   /*哈哈哈满不过你 还是有个img的*/
+   list-style-image:url(star.svg);
+   /*管理列表计数*/
+   start属性<ol start="4">
+   value属性<li value="2">
+   ```
+   
+
+4. 链接属性
+
+   ```Css
+   HTML的a
+   <a href="https://github.com/994AK">这是一个链接</a>
+   
+   :actce/鼠标交互时
+   :hocer/用户鼠标悬停
+   :visited/访问过的链接
+   :link/未访问的链接
+   ```
+
+   
+
+- CSS 各种选择器的概念，使用方法及使用场景 
+
+  1. 简单选择器：合适用于class你想修改的标签或者子元素的标签
+
+  2. 伪类选择器：用于鼠标经过，鼠标离开，鼠标操作的选择器
+
+  3. 组合选择器：不仅仅是选择器本身，还可以这样使用：h1 h2{}
+
+     一起使用 一起修改.
+
+  4. 多重选择器:这个思路是将以逗号分隔开的多个选择器放在一个CSS规则下面， 以将一组声明应用于由这些选择器选择的所有元素。
+
+     可以用于多个修改一样的元素属性
+
+- CSS 选择器的优先级
+
+          1. 重要性：!important 不建议使用 因为会破坏掉。
+
+​     来了哦~排名榜：
+
+1.第一名：!important 因为是重要性
+
+2.第二名：没有选择器, 规则在一个元素的 style属性里面
+
+3.第三名：ID选择器啦。
+
+4.第四名：子代选择器  父亲是div里面有个儿子叫p div+p 就是子代选择器
+
+5.标签选择器 h1 h2 等等
+
+试着通过这些，并确保你理解他们为什么具有我们给予他们的专用性。
+
+| 选择器                                    | 千位 | 百位 | 十位 | 个位 | 合计值 |
+| :---------------------------------------- | :--- | :--- | :--- | :--- | :----- |
+| `h1`                                      | 0    | 0    | 0    | 1    | 0001   |
+| `#indentifier`                            | 0    | 1    | 0    | 0    | 0100   |
+| `h1 + p::first-letter`                    | 0    | 0    | 0    | 3    | 0003   |
+| `li > a[href*="zh-CN"] > .inline-warning` | 0    | 0    | 2    | 2    | 0022   |
+| 没有选择器, 规则在一个元素的 style属性    | 1    | 0    | 0    | 0    | 1000   |
+
+### 好了！晚安各位
+

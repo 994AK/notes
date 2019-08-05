@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana,"Trebuchet MS",sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    background-image: url('https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2130915073,4170110643&fm=26&gp=0.jpg');
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+div{
+    width: 600px;height: 600px;
+    margin: 0 auto;
+    /*border-left: 1px solid #aaaaaa;*/
+    /*border-right: 1px solid #aaaaaa;*/
+    /*border-bottom: 1px solid rosybrown;*/
+    background-image: url("https://imgsa.baidu.com/forum/w%3D580/sign=69dbd0e7f936afc30e0c3f6d8318eb85/b6c4a5638535e5dd8d8538f878c6a7efce1b6270.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+h1{
+    height: 80px;
+    color: thistle;
+    /*字体大小*/
+    font-size: 3em;
+    text-shadow: -1px -1px 1px #aaa,
+    0px 4px 1px rgba(0,0,0,0.5),
+    4px 4px 5px rgba(0,0,0,0.7),
+    0px 0px 7px rgba(0,0,0,0.4);
+
+}
+h1{
+    background-image: url(https://mdn.mozillademos.org/files/13026/fire-ball-icon.png);
+    background-repeat: no-repeat;
+    background-position: 28% center;
+    background-color: #927943;
+}
+p{
+    display: flex;
+    font-weight: bold;
+    color: #927943;
+    font-size: 1em;
+    text-align: left;
+}
+.setting,.setting1,.setting2,.setting3,.setting4{
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: 80% center;
+}
+.setting{background-image: url("http://image.bee-ji.com/204755");}
+.setting1{background-image: url("http://image.bee-ji.com/207674");}
+.setting2{background-image: url("http://image.bee-ji.com/204975");}
+.setting3{background-image: url("../images/cxk3.gif");}
+.setting4{background-image: url("../images/cxk4.gif");}
+h2{
+    width: 600px;
+    height: 80px;
+    border: 0px solid #aaaaaa;
+    color: teal;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+}
+p::before{
+    content: "-";
+}
+p:hover{
+    font-size: 1.2em;
+    /*border: 1px solid;*/
+    color: hotpink;
+
+}
+h2:hover{
+    border: 0 solid cyan;
+    text-shadow: -5px 2px 1px #aaa;
+    color: gold;
+}
+span{
+    text-decoration: underline;
+}
+#a{
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #bc2e80;
+    text-shadow: -1px -1px 1px #aaa
+}
+#img{
+    margin: 0 600px 0 0;
+    border: none;
+    border-right: 1px solid #aaaaaa;
+}
