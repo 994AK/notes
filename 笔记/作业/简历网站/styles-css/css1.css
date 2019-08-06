@@ -1,8 +1,14 @@
 *{
     margin: 0;
+    border-sizing: border-box;
 }
 body{
-    background: #455A64 linear-gradient(to top,#607D8B,#FFFFFF) no-repeat 100% center;
+    /*background: #455A64 linear-gradient(to top,sandybrown,#FFFFFF) no-repeat 100% center;*/
+    background-image: url("https://github.com/Blankj/doge-expression/raw/master/_00_000_049_SingleRun/018.gif");
+    background-repeat: no-repeat;
+    background-position: 50% center;
+    background-size: 40%;
+
     font-family: Serif, Verdana, sans-serif;
 }
 p,li{
@@ -10,6 +16,9 @@ p,li{
     list-style-position:inside;
 }
 div{
+    /*width: 70%;*/
+    /*max-width: 1280px;*/
+    /*min-width: 480px;*/
     padding: 16px;
     margin: 0 auto;
 }
@@ -25,9 +34,30 @@ div h1,div h2{
     margin: 16px;
 }
 h2{
-    background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565023435300&di=25ad391c32f7ef3dfd63cb8b6b7a52de&imgtype=0&src=http%3A%2F%2Fimgup02.iefans.net%2Fiefans%2F2019-02%2F02%2F12%2F15490805407796_0.gif");
+    /*background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565023435300&di=25ad391c32f7ef3dfd63cb8b6b7a52de&imgtype=0&src=http%3A%2F%2Fimgup02.iefans.net%2Fiefans%2F2019-02%2F02%2F12%2F15490805407796_0.gif");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 20px;*/
+    /*background-position: 99% center;*/
+    padding:15px;
+}
+.h2_a{
+    background-image: url('https://github.com/Blankj/doge-expression/raw/master/_10_600_699_OtherGif/647.gif');
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 75px;
+    background-position: 99% center;
+}
+.h2_b{
+    background-image: url('https://github.com/Blankj/doge-expression/raw/master/_10_600_699_OtherGif/648.gif');
+    background-repeat: no-repeat;
+    background-size: 75px;
+    background-position: 99% center;
+
+}
+
+.h2_d{
+    background-image: url('https://github.com/Blankj/doge-expression/raw/master/_10_600_699_OtherGif/649.gif');
+    background-repeat: no-repeat;
+    background-size: 75px;
     background-position: 99% center;
 }
 a{
@@ -69,4 +99,13 @@ li{
 
 .a:hover{
     color: #bc2e80;
+}
+
+.inline{
+    padding: 0.5em;
+    border: 1px solid green;
+    background-color: yellow;
+}
+.inline{
+    display: inline-block;
 }
