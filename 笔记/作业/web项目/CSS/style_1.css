@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    line-height: 1.5;
+
+}
+
+td,p{
+    font-size:1em ;
+    font-family: "Trebuchet MS", Webdings, "HoloLens MDL2 Assets";
+    color: #000000;
+}
+.td_1{
+    font-weight: 700;
+}
+

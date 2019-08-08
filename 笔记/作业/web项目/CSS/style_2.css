@@ -1,0 +1,31 @@
+/*
+ @CSS排序：
+   1.布局 position / top / right / bottom / left / float / display / overflow
+   2.尺寸 border / margin / padding / width / height
+   3.文本 font / line-height / text-align / word-wrap
+   4.视觉 background / color / transition / list-style
+*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header{
+    float: left;
+    display: block;
+
+    width: 150px;
+    height: 1000px;
+
+    text-align: center;
+    padding-top:50px;
+    font-size: 2.5em;
+
+    background-color: #65A5FA;
+    color: #FFF;
+}
+
+section{
+
+    display: inline-block;
+}
