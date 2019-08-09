@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        label[for="toggle"] {
+            font-size: 3rem;
+            position: absolute;
+            top: 4px;
+            right: 5px;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            top: -100px;
+        }
+
+        aside {
+            background-color: #a60000;
+            color: white;
+
+            width: 600px;
+            height: 98%;
+            padding: 10px 1%;
+
+            position: fixed;
+            top: 0;
+            right: -800px;
+
+            transition: 0.6s all;
+        }
+
+        input[type=checkbox]:checked + aside {
+            right: 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+<label for="toggle">❔</label>
+<input type="checkbox" id="toggle">
+<aside>
+
+   我来了~~~
+    看见我出来了吗
+
+</aside>
+<script>
+    var tabs = document.querySelectorAll('label');
+    var panels = document.querySelectorAll('aside');
+
+    for(i = 0; i < tabs.length; i++) {
+        var tab = tabs[i];
+        setTabHandler(tab, i);
+    }
+
+    function setTabHandler(tab, tabPos) {
+        tab.onclick = function() {
+            for(i = 0; i < tabs.length; i++) {
+                if(tabs[i].getAttribute('class')) {
+                    tabs[i].removeAttribute('class');
+                }
+            }
+
+            tab.setAttribute('class', 'active');
+
+            for(i = 0; i < panels.length; i++) {
+                if(panels[i].getAttribute('class')) {
+                    panels[i].removeAttribute('class');
+                }
+            }
+
+            panels[tabPos].setAttribute('class', 'active-panel');
+        }
+    }
+</body>
+</html>
