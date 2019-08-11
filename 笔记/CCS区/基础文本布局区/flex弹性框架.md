@@ -27,6 +27,17 @@
 
 ## 我们来了解一些属性吧
 
+## 容器的属性
+
+以下6个属性设置在容器上。
+
+> - flex-direction
+> - flex-wrap
+> - flex-flow
+> - justify-content
+> - align-items
+> - align-content
+
 flex提供了`flex-direction`属性，它可以指定主轴的方向（默认的是：row"从左行走到右"）这使得他们在按你的浏览器默认语言方向排成一排.
 
 我们简单了解一下flex-direction属性：
