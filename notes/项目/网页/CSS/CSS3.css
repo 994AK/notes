@@ -1,0 +1,88 @@
+/*第三组*/
+.page3{
+    position: relative;
+    background-image: url("../img/1.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    width: 1600px;
+    /*记得改回800px*/
+    height: 850px;
+    margin: 0 auto;
+}
+
+.iago{
+    position: absolute;
+    right:0;
+    top: 0;
+    width: 645px;
+    height: 800px;
+    /*background: aqua;*/
+}
+
+.ipa{
+    background-image: url("../img/1212.png");
+    background-repeat:no-repeat ;
+    width: 645px;
+    height: 605px;
+    border: 1px solid #d3d3d3;
+    border-radius:50px 0 0 50px;
+    margin-top: 104px;
+
+}
+i{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius:50%;
+    right: 605px;
+    top: 400px;
+    border: 1px solid #d3d3d3;
+}
+.all{
+    display: inline-block;
+    width: 587px;
+    height: 546px;
+    background-image: url("../img/121.png");
+    background-repeat:no-repeat ;
+    border: 1px solid #d3d3d3;
+    margin-left: 58px;
+    margin-top: 28px;
+}
+
+.china{
+    width: 955px;
+    height: 679px;
+    margin: 0 auto;
+}
+
+aside h1{
+    padding-top: 183px;
+    font-size:37px;
+    line-height: 52px;
+    width: 371px;
+    color: #ffffff;
+}
+
+aside .p2{
+    width: 371px;
+    font-size:18px;
+    line-height: 28px;
+    padding-top: 50px;
+    color: #d3d3d3;
+    opacity:.7;
+}
+
+article input{
+    font-size: 13px;
+    width: 241px;
+    height: 62px;
+    border: 1px solid #d3d3d3;
+}
+
+.inp{
+    background-color:rgba(0,0,0,.3);
+    color: #ffffff;
+}
+/*END*/

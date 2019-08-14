@@ -1,0 +1,49 @@
+.page6{
+    width: 1600px;
+    height: 1100px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d3d3d3;
+
+}
+
+
+
+.titles {
+
+    text-align: center;
+    width: 100%;
+    height: 273px;
+
+}
+
+.h5-min{
+    margin-top: 135px;
+    margin-bottom: 35px;
+    font-size: 50px;
+    line-height: 52px;
+    font-weight: normal;
+}
+
+.image{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1600px;
+    height: 814px;
+
+}
+
+section nav{
+    width: 978px;
+    height: 719px;
+}
+
+section nav img{
+    width:  470px;
+    height: 350px;
+}
+
+.image nav img:hover{
+  background: red;
+    opacity:0.5
+}

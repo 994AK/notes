@@ -1,0 +1,66 @@
+/*第五组*/
+.page5{
+    width: 1600px;
+    height: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.img-op{
+    position: relative;
+    width: 977px;
+    height: 786px;
+
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.img1{
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+}
+.span1,
+.span2{
+    width: 309px;
+    height: 281px;
+}
+
+span > h4{
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 18px;
+}
+
+span > p{
+    font-size: 16px;
+    line-height: 28px;
+    /*color: #d3d3d3;*/
+    opacity: .7;
+
+}
+.span1{
+    position: absolute;
+    width: 309px;
+    height: 281px;
+    right: 0;
+    top: 78px;
+
+}
+
+.span2{
+    position: absolute;
+    width: 332px;
+    height: 281px;
+    left: 0;
+    top: 501px;
+
+}
+
+.img2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

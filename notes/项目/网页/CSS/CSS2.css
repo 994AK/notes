@@ -1,0 +1,86 @@
+/*第二组图*/
+.page2{
+    position: relative;
+    width: 1599px;
+    height: 706px;
+    margin: 0 auto;
+    background:#ffffff;
+}
+
+.the{
+    text-align: center;
+    width: 661px;
+    height: 236px;
+    margin: 0 auto;
+}
+
+.the p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 85px;
+}
+.the h1{
+    margin-top: 37px;
+    /*line-height: 52px;*/
+    color: #141414;
+}
+
+.img-tu{
+    position: relative;
+    width: 1097px;
+    height: 305px;
+    /*border: 1px solid red;*/
+    margin:0 auto;
+}
+.dv1,
+.dv2,
+.dv3,
+.dv4{
+    position: absolute;
+    background-position:0 5px;
+    background-repeat: no-repeat;
+    width: 427px;
+    height: 115px;
+    /*background: red;*/
+}
+.dv1{
+    background-image: url("../img/1_03.png");
+    background-position:0 5px;
+    background-repeat: no-repeat;
+    left: 78px;
+    top: 22px;
+}
+
+.asi{
+    padding-left: 60px;
+}
+
+.img-tu h5{
+    font-size: 20px;
+}
+
+.img-tu p{
+    color: #808080;
+    font-size: 16px;
+    padding-top: 20px;
+
+}
+
+.dv2{
+    background-image: url("../img/1_11.png");
+    left: 78px;
+    bottom: 22px;
+}
+
+.dv3{
+    background-image: url("../img/1_06.png");
+    right: 78px;
+    top: 22px;
+}
+
+.dv4{
+    background-image: url("../img/1_13.png");
+    right: 78px;
+    bottom: 22px;
+}

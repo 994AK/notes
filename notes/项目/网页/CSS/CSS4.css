@@ -1,0 +1,65 @@
+/*图四开始*/
+.page4{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    width: 1600px;
+    /*记得改回800px*/
+    height: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d3d3d3;
+    /*border-top: 1px solid #d3d3d3;*/
+}
+
+.top1{
+    display: flex;
+    width: 1600px;
+    height: 219px;
+
+    font-size: 2.3em;
+}
+
+.top1 h1{
+    margin-right:64px;
+    flex: 2;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.asc{
+    width: 896px;
+    height: 600px;
+
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-end;
+    /*justify-content:space-around;*/
+
+    display: flex;
+
+
+}
+
+.asc aside{
+    text-align: center;
+    /*text-align: center;*/
+    margin: 150px;
+    /*position: absolute;*/
+    width: 235px;
+    height: 285px;
+
+}
+
+h5{
+    font-size: 2.5em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.p1 .p3,
+.as3 .p4,
+.as2 p5{
+    line-height: 1.5;
+    font-size: 15px;
+    opacity: .8;
+}

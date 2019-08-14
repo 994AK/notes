@@ -1,0 +1,112 @@
+
+.page7{
+    width: 1600px;
+    height: 700px;
+    margin: 0 auto;
+
+}
+
+.theme{
+    position: relative;
+    width: 1000px;
+    height: 702px;
+    margin: 0 auto;
+
+}
+
+.theme aside{
+    display: inline-block;
+}
+
+.register_protocol{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 470px;
+    height: 560px;
+    border:1px solid  grey;
+}
+
+.introduced{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 470px;
+    height: 560px;
+
+}
+
+.register_protocol p{
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top:32px ;
+}
+.register_protocol input{
+    margin-left: 53px;
+    width: 365px;
+    font-size: 14px;
+    line-height: 26px;
+}
+.text1,
+.text2,
+.text3{
+    padding-left: 1.5em;
+    height: 50px;
+    opacity: .6;
+    border: 1px solid #d3d3d3;
+    color: black;
+
+}
+
+.text3{
+    padding-bottom: 90px;
+    height: 144px;
+}
+
+.button1{
+    color: white;
+    background: black;
+}
+
+.introduced .preTags{
+    font-size: 2.5em;
+    line-height: 2.5;
+    margin-top: 50px;
+}
+
+.p-tags{
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.6;
+}
+
+.p-tags,
+.p-tags2,
+.p-tags3,
+.p-tags4{
+    background-repeat: no-repeat;
+    background-position: 0 30px;
+    background-size: 24px;
+    padding-top: 36px;
+}
+
+.p-tags2{
+    font-weight: 700;
+    padding-left: 35px;
+    background-image: url("../img/6_03.png");
+}
+
+.p-tags3{
+    font-weight: 700;
+    padding-left: 35px;
+    background-image: url("../img/6_06.png");
+}
+
+.p-tags4{
+    font-weight: 700;
+    background-position: 0 38px;
+    padding-left: 35px;
+    background-image: url("../img/6_09.png");
+}
