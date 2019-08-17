@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles-css/css1.css">
 </head>
 <body class="box">
+<input type="button" value="关于我" onclick="btn()">
+<p id="Pa" style="display:none">@:1505398065我会加油的，虽然说刚接触Js当是我还是会努力的!</p>
 <div style="width: 700px; height: 600px;">
     <h1>简历</h1>
     <hr/>
@@ -56,6 +58,12 @@
         </li>
     </ol>
 </div>
-
+<script>
+    function btn()
+    {
+        var P1 = document.getElementById("Pa");
+        P1.style.display="block";
+    }
+</script>
 </body>
 </html>
