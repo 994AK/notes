@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #dv1 div{
+            width: 200px;
+            height: 200px;
+            background: darkblue;
+            display: none;
+            color: white;
+        }
+
+        .active{
+            background: orange;
+        }
+    </style>
+
+    <script>
+        window.onload = function ()
+        {
+            var oDiv = document.getElementById("dv1");
+            var aBtn = oDiv.getElementsByTagName("input"); //获取所有按钮
+            var aDiv = oDiv.getElementsByTagName("div"); //获取所有的dv1里面的div
+
+            for ( var i = 0; i<aBtn.length; i++ )
+            {
+                aBtn[i].index=i; //让他自定义每个值
+                aBtn[i].onclick =function (){
+                    for (var i = 0; i < aBtn.length;i++){ //默认为空,点击按钮就会变成原来的颜色.
+                        aBtn[i].className=''; // 默认为空
+                        aDiv[i].style.display = 'none';
+
+                    }
+                    this.className = "active"; //然后点击的按钮就变成 class：黄色.
+                    aDiv[this.index].style.display="block"//点击按钮让div显示.
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div id="dv1">
+    <input class="active" type="button" value="新闻">
+    <input type="button" value="有趣">
+    <input type="button" value="劲爆">
+    <input type="button" value="搞笑">
+    <div style="display: block">123</div>
+    <div>456</div>
+    <div>789</div>
+    <div>323</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /*list-style-type: none;*/
+        }
+
+
+    </style>
+</head>
+<body>
+  <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+  </ul>
+<script>
+
+    var aLi = document.getElementsByTagName("li");
+
+    let a = aLi.length;
+    for (var i = 0; i<a;i++){
+        // i 0 1 2 3 4 5 6...
+        if (i % 2 === 0 ){
+            // 0 2 4 6 8 10
+            aLi[i].style.background="#CCC";
+            //余数 等于0的话 真
+        }else {
+            aLi[i].style.background="red";
+            //余数 不等于0 就 假
+        }
+    }
+
+</script>
+</body>
+</html>

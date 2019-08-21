@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles-css/css1.css">
+    <style>
+        #p6{
+            color: teal;
+        }
+    </style>
 </head>
 <body class="box">
 <input type="button" value="关于我" onclick="btn()">
@@ -12,6 +17,7 @@
     <h1>简历</h1>
     <hr/>
     <h2 class="h2_a">个人信息</h2>
+    <p id="p6">1213123</p>
     <table>
         <tr>
             <td>姓名:</td>
@@ -64,6 +70,16 @@
         var P1 = document.getElementById("Pa");
         P1.style.display="block";
     }
+    //时间
+    var oP = document.getElementById("p6");
+    var myDate = new Date();
+    if (myDate > 19){
+        alert("晚上好");
+        oP.innerHTML="当前时间："+myDate;
+    }else {
+        alert("上午好")
+    }
+
 </script>
 </body>
 </html>

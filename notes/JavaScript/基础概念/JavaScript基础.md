@@ -34,6 +34,10 @@ JavaScript 能够以不同方式“显示”数据：
 
 
 
+
+
+
+
 ## 使用console.log()测试
 
 在浏览器中，您可使用 console.log() 方法来显示数据。

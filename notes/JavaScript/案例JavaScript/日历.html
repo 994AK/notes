@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #tab {
+            width: 400px;
+            height: 600px;
+            background: #d3d3d3;
+            margin: 0 auto;
+        }
+
+        li {
+            width: 100px;
+            height: 100px;
+            float: left;
+            list-style-type: none;
+            background: black;
+            margin: 5px 5px;
+            text-align: center;
+            color: white;
+
+        }
+
+        .active {
+            background: white;
+            color: red;
+        }
+
+        #text {
+            float: left;
+            width: 300px;
+            height: 150px;
+            text-align: center;
+            border: 2px solid white;
+            background: white;
+            margin-left: 50px;
+
+        }
+        #text p{
+           color: brown;
+       }
+        li:hover {
+            background: white;
+            color: red;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var arr =
+                [//月份活动
+                    "想宝贝~",
+                    "还是想宝宝",
+                    "宝宝欺负我",
+                    "亲一口~",
+                    "😔",
+                    "♥",
+                    "♥♥♥",
+                    "♥♥♥♥",
+                    "♥♥♥♥♥",
+                    "♥♥♥♥♥♥",
+                    "♥♥♥♥♥♥♥",
+                    "♥♥♥♥♥♥♥♥",
+                    "♥♥♥♥♥♥♥♥♥",
+                ];
+            var oDiv = document.getElementById("tab");
+            var aLi = oDiv.getElementsByTagName("li");
+            var oTxt = oDiv.getElementsByTagName('div')[0];
+
+            for (var i=0;i<aLi.length;i++){//循环到每一个li标签
+                aLi[i].index = i; //定义数值
+                aLi[i].onclick=function () {//循环给每一个li标签上点击事件
+                    for(var i=0;i<aLi.length;i++){//进入之前清空样式
+                        aLi[i].className='';
+                    }
+                    this.className='active';//加载到这里样式启动/然后下一个就清空原来位置的样式
+                    oTxt.innerHTML="<h2>"+(this.index+1)+"月份</h2><p>"+(arr[this.index])+"</p>"
+                // 循环的数值加到this.index中.然后让导入数组让它 排列好[0,1,2,3...]
+                    //晚安咯.
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div id="tab">
+    <ul>
+        <li class="active"><h2>1</h2>
+            <p>JAN</p></li>
+        <li><h2>2</h2>
+            <p>FEB</p></li>
+        <li><h2>3</h2>
+            <p>MAR</p></li>
+        <li><h2>4</h2>
+            <p>APR</p></li>
+        <li><h2>5</h2>
+            <p>MAY</p></li>
+        <li><h2>6</h2>
+            <p>JUN</p></li>
+        <li><h2>7</h2>
+            <p>JUL</p></li>
+        <li><h2>8</h2>
+            <p>AUG</p></li>
+        <li><h2>9</h2>
+            <p>SEP</p></li>
+        <li><h2>10</h2>
+            <p>OCT</p></li>
+        <li><h2>11</h2>
+            <p>NOV</p></li>
+        <li><h2>12</h2>
+            <p>DEC</p></li>
+    </ul>
+    <div id="text">
+        <h2>一月活动</h2><p>1月到了!</p>
+    </div>
+
+</div>
+
+</body>
+</html>

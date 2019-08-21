@@ -1,5 +1,45 @@
 ## 类似代数
 
+####   typeof运算符
+
+​      用法.返回值
+​      常见类型：
+
+number(数组)
+
+string(字符串)
+
+boolean(布尔值)
+
+undefined(未定义)
+
+object（对象）
+
+function(函数).
+
+**数据类型转换！**
+        显示类型转换（强制类型转换）
+       
+
+```
+parseInt()：转化成"整数"！ 处理整数
+parseInt(1.5);//1
+parseInt(1easd);//1
+parseInt(1.123123);//1
+```
+
+```
+parseFloat()转化成"小数"!  处理小数
+paeseFloat(1.5)//1.5 显示小数
+```
+
+
+​         NaN的意义和检测：isNaN检测是不是NaN并且转换成字符串.报告错误。
+
+
+
+
+
 在本例中，price1、price2 以及 total 是变量：
 
 ### 实例

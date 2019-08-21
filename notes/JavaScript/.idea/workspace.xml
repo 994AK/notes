@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a3b867c-b3f3-4b6e-b46b-6299fc7401e4" name="默认更改列表" comment="" />
+    <list default="true" id="7a3b867c-b3f3-4b6e-b46b-6299fc7401e4" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/案例JavaScript/js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/案例JavaScript/全选，不选，反选.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/案例JavaScript/变量等等/3倍小案例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/案例JavaScript/变量等等/变量使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/案例JavaScript/隔行换色.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础概念/JS变量.md" beforeDir="false" afterPath="$PROJECT_DIR$/基础概念/JS变量.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础概念/JavaScript基础.md" beforeDir="false" afterPath="$PROJECT_DIR$/基础概念/JavaScript基础.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第一天 感受javas/jshtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/案例JavaScript/jshtml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第一天 感受javas/第二种属性操作方法.html" beforeDir="false" afterPath="$PROJECT_DIR$/案例JavaScript/第二种属性操作方法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第一天 感受javas/背景变色.html" beforeDir="false" afterPath="$PROJECT_DIR$/案例JavaScript/背景变色.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/简历网站/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/简历网站/index1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/简历网站/styles-css/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/简历网站/styles-css/CSS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/简历网站/styles-css/css1.css" beforeDir="false" afterPath="$PROJECT_DIR$/../homework/简历网站/styles-css/css1.css" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +31,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1PX3RIGtA1MpRec5X3aWjNli7MA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -50,10 +71,28 @@
       <option name="presentableId" value="Default" />
       <updated>1566006603490</updated>
       <workItem from="1566006604962" duration="16848000" />
+      <workItem from="1566096034933" duration="2618000" />
+      <workItem from="1566136248274" duration="5081000" />
+      <workItem from="1566214411154" duration="8362000" />
+      <workItem from="1566303266484" duration="8862000" />
+      <workItem from="1566387732378" duration="6239000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

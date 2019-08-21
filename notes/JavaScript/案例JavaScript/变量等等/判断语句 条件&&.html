@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div id="div1">
+    <p>请在以下的vlue输入你 一位数 或者两位数的数组</p>
+<input type="button" value="点我知结果" >
+<input type="text" >
+</div>
+<script>
+
+        var aDiv = document.getElementById("div1");
+        var oBut = document.getElementsByTagName("input")[0];
+        var aText = aDiv.getElementsByTagName("input")[1];
+
+        oBut.onclick=function () {
+            var aTxt = parseInt(aText.value);
+
+            if (aTxt > 9 && aTxt < 100) {
+                alert("两位数兄弟");
+            } else if (aTxt < 100){
+                alert("我是一位数的");
+            }else {
+                alert("乱按你姐呢？")
+            }
+        }
+       // aTxt > 9 && aTxt < 100 ? alert("两位数兄弟") : alert("我是一位数的");
+
+</script>
+</body>
+</html>

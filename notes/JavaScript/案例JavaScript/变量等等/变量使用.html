@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            var list = document.querySelector('.output ul');
+            var totalBox = document.querySelector('.output p');
+            var total = 0;
+            list.innerHTML = '';
+            totalBox.textContent = '';
+            var arr = [
+
+            'Underpants:6.99',
+            'Socks:5.99',
+            'T-shirt:14.99',
+            'Trousers:31.99',
+            'Shoes:23.99'
+        ];
+
+            for (var i = 0; i < arr.length; i++) {
+                var subArray = arr[i].split(':');
+
+
+                // number 4
+
+                // number 5
+                // itemText = 0;
+                //
+                // var listItem = document.createElement('li');
+                // listItem.textContent = itemText;
+                // list.appendChild(listItem);
+            }
+
+            // totalBox.textContent = 'Total: $' + total.toFixed(2);
+
+        }
+    </script>
+</head>
+<body>
+<button>
+    Press me
+</button>
+</body>
+</html>
