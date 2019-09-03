@@ -5,8 +5,35 @@
     <title>Title</title>
     <link rel="stylesheet" href="styles-css/css1.css">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         #p6{
             color: teal;
+        }
+
+        #div1{
+            position: relative;
+            width: 700px;
+            height: 250px;
+            overflow: hidden;
+
+        }
+       #div1 img{
+            width: 280px;
+            height: 250px;
+        }
+        #div1 ul{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        #div1 ul li{
+
+            float: left;
+            list-style-type: none;
         }
     </style>
 </head>
@@ -15,6 +42,14 @@
 <p id="Pa" style="display:none">@:1505398065我会加油的，虽然说刚接触Js当是我还是会努力的!</p>
 <div style="width: 700px; height: 600px;">
     <h1>简历</h1>
+    <div id="div1">
+        <ul>
+            <li><img src="0.jpg" alt=" "></li>
+            <li><img src="1.jpg" alt=" "></li>
+            <li><img src="2.jpg" alt=" "></li>
+            <li><img src="3.jpg" alt=" "></li>
+        </ul>
+    </div>
     <hr/>
     <h2 class="h2_a">个人信息</h2>
     <p id="p6">1213123</p>
@@ -64,21 +99,22 @@
         </li>
     </ol>
 </div>
+<script src="mode.js"></script>
 <script>
-    function btn()
-    {
-        var P1 = document.getElementById("Pa");
-        P1.style.display="block";
-    }
-    //时间
-    var oP = document.getElementById("p6");
-    var myDate = new Date();
-    if (myDate > 19){
-        alert("晚上好");
-        oP.innerHTML="当前时间："+myDate;
-    }else {
-        alert("上午好")
-    }
+    // function btn()
+    // {
+    //     var P1 = document.getElementById("Pa");
+    //     P1.style.display="block";
+    // }
+    // //时间
+    // var oP = document.getElementById("p6");
+    // var myDate = new Date();
+    // if (myDate > 19){
+    //     alert("晚上好");
+    //     oP.innerHTML="当前时间："+myDate;
+    // }else {
+    //     alert("上午好")
+    // }
 
 </script>
 </body>

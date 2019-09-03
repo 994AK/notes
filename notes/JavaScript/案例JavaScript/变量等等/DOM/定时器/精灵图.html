@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+    <style>
+        .erik {
+            background-image: url(123312.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 480px;
+            width: 480px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="erik"></div>
+
+    <script>
+        // window.onload = function() {
+        //     var div = document.querySelector(".erik");
+        //     var top = 0;
+        //     var sign = -1;
+        //     setInterval(function(){
+        //         div.style.backgroundPosition = "0 " + top + "px";
+        //         top += sign * 480;
+        //         if(top == -16 * 480 || top == 0) {
+        //             sign *= -1;
+        //         }
+        //     }, 100);
+        // }
+   window.onload=function(){
+    var div = document.querySelector(".erik");
+        var top = 0;
+        var sign = -1;
+        setInterval(function(){
+            div.style.backgroundPosition = "0"+top+"px";
+            top+=sign *480;
+            if(top == -16*480||top == 0){
+                sign*=-1;
+            }
+        },1000/60)
+   }
+       
+        
+    </script>
+</body>
+
+</html>

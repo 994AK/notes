@@ -1,0 +1,49 @@
+今天学习了 定时器,date时间,移入移出. 无缝链接案例
+定时器：每个一段时间运行一次，或者隔一段只运行一次
+setInterval: //延迟运行
+setTimeout:  //只运行一次
+停止定时器：
+clearInterval //关闭
+clearTimeout  //关闭
+
+Date日期对象
+getHours 小时
+getMinutes 分钟
+getSeconds  秒
+getFullYear 年
+getMonth    月
+getDate     日
+getDay     星期几  外国人 从星期日开始
+
+鼠标事件：
+onmouseover 鼠标移入
+onmouseout  鼠标移出
+
+无缝连接图片：分析
+获取属性、获取宽度
+比如 4张图片.为了欺骗眼球就 * 2 变成 8张.
+oUl.innerHTML += oUl.innerHTML;
+
+计算图片的父级的宽度 让li图片容的下.
+计算方式： ul的宽度= 图片的宽 * 图片.length的宽
+oUl.style.width = aLi[0].offsetWidth * aLi.length + "px";
+
+用函数包袱住 因为 li属性是定位的 利用于 Left等方式来移动
+要用到 计算宽度的 offset属性，计算宽度与自身位置.
+判断属性
+if(oUl.offsetLeft < -oUl.offsetWidth/2)
+{
+   oUl.style.left = '0'
+}
+为什么要 减  由于负数才能向后走.
+如果小于了 图片的两倍数就复合到 0的位置;
+上面的步骤都完成了，移动：修改li的定位px;
+ oUl.style.left = oUl.offsetLeft - -4 + "px";
+
+最后用定时器 设置 运动效果.
+var timer = setInterval(函数, 延迟：1000 / 60);
+每60帧 移动 -4 left 达到判断的负数两倍宽度就返回到0的位置;
+每次启动
+
+
+

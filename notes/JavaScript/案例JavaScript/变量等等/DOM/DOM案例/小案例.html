@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #box{
+            margin: 0 auto;
+            width: 500px;
+            height: 600px;
+            border: 1px solid #6b655a;
+        }
+        .div1{
+            width: 500px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-bottom: 1px solid royalblue;
+        }
+
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        input{
+            width: 120px;
+            height: 30px;
+        }
+
+        li img{
+            margin-right: 10px;
+        }
+        li{
+            list-style-type: none;
+            font-size: 1.5em;
+            /*padding: 10px;*/
+            /*margin: 10px;*/
+            width: 85%;
+            margin-left: 43px;
+
+
+        }
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="div1">
+        <img src="0.jpg" >
+        <input type="text" id="text">
+        <input type="button" value="输出" id="btn1">
+    </div>
+    <div class="div2">
+        <ul class="ul1">
+
+        </ul>
+    </div>
+</div>
+<script>
+     var oText = document.querySelector("#text"),
+         oBtn1 = document.querySelector("#btn1"),
+         oUl = document.querySelector(".ul1");
+
+
+
+
+
+     oBtn1.onclick = function ()
+     {
+         let oLi = document.createElement("li"),
+             aLi = oUl.querySelectorAll("li");
+         let img2 = document.querySelector("img");
+
+         oLi.innerHTML=`<img src="0.jpg"><span>${oText.value}</span>`;
+         (aLi.length > 0)
+             ? oUl.insertBefore(oLi,aLi[0])
+             :oUl.appendChild(oLi);
+     }
+
+
+</script>
+</body>
+</html>

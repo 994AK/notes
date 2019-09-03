@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<p id="h1">
+    我是文本<br/>
+    我是文本
+</p>
+<button id="btn1">消失</button>
+<button id="btn2">显示</button>
+
+<script>
+    var aP1 = document.querySelector("#h1"),
+        oBtn = document.querySelector("#btn1"),
+        oBtn1= document.querySelector("#btn2");
+    console.log(oBtn)
+
+    oBtn.onclick = function () {
+        aP1.style.display="none"
+    }
+
+    oBtn1.onclick=function ()
+    {
+        aP1.style.display="block"
+    }
+</script>
+</body>
+</html>

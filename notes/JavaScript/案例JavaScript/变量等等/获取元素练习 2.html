@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+<body>
+<div id="wrapper">
+    <div id="news-top" class="section">
+        <h3>Some title</h3>
+        <div class="content">
+            <ul>
+                <li><span>HTML</span><a href="">Some Link1</a></li>
+                <li><span>JS</span><a class="active" href="">Some Link2</a></li>
+                <li><span>CSS</span><a href="">Some Link3</a></li>
+                <li><span>JS</span><a href="">Some Link4</a></li>
+            </ul>
+        </div>
+        <img src="">
+        <p class="">Some Text</p>
+    </div>
+    <div id="news-normal" class="section">
+        <h3>Some title</h3>
+        <div class="content">
+            <ul>
+                <li><span>HTML</span><a href="">Some Link1</a></li>
+                <li><span>HTML</span><a href="">Some Link2</a></li>
+                <li><span>JS</span><a class="active" href="#">Some Link3</a></li>
+                <li><span>CSS</span><a href="">Some Link4</a></li>
+            </ul>
+        </div>
+        <img src="">
+        <p class="">Some Text</p>
+        <button>场景一</button>
+        <button>场景二</button>
+        <button>场景三</button>
+        <p class="p1"></p>
+    </div>
+</div>
+<script>
+
+    var oDiv = document.querySelectorAll("div");
+    var aP = document.querySelector(".p1");
+
+
+    document.querySelectorAll("button")[0].onclick = function () {
+
+        function getAllListItem() {
+            // 返回页面中所有li标签
+            for (var i = 0; i < oDiv.length; i++) {
+                aP.innerHTML = "";
+                aP.innerHTML = oDiv[i].innerHTML;
+            }
+        }
+
+        getAllListItem();
+    };
+
+    document.querySelectorAll("button")[1].onclick = function () {
+        function findAllHtmlSpanInOneSection(sectionId) {
+            // 返回某个section下所有span中内容为HTML的span标签
+            for (var i = 0; i < 2; i++) {
+                aP.innerHTML = "";
+                var aSpan = document.getElementById("news-normal").querySelectorAll("span")[i];
+                aP.innerHTML += aSpan.innerHTML + "<br>";
+            }
+        }
+        findAllHtmlSpanInOneSection();
+    };
+
+
+    function findListItem(sectionId, spanCont) {
+        // 返回某个section下，所有所包含span内容为spanCont的LI标签
+    }
+
+    document.querySelectorAll("button")[2].onclick=function () {
+        function getActiveLinkContent(sectionId) {
+            // 返回某个section下，class为active的链接中包含的文字内容
+            var aA =document.getElementById("news-normal").querySelectorAll("div ul li a")[2];
+            aP.innerHTML='';
+            aP.innerHTML+= aA.innerHTML="<a href='#'>Some Link3</a>";
+        }
+        getActiveLinkContent();
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 290px;
+            height: 250px;
+        }
+
+        #div1 {
+            margin: 100px auto;
+            position: relative;
+            width: 550px;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        div ul {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        ul li {
+            float: left;
+
+            list-style-type: none;
+        }
+
+
+        #btn1 {
+            position: relative;
+        }
+
+        .btn2 {
+            left: 500px;
+            top: 50px;
+        }
+
+        .btn3 {
+            right: 500px;
+            top: 50px;
+        }
+
+        button {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+<div id="btn1">
+    <button class="btn2"> <</button>
+    <button class="btn3"> ></button>
+</div>
+
+<div id="div1">
+    <ul>
+        <li><img src="../../DOM/DOM案例/0.jpg"></li>
+        <li><img src="1.jpg"></li>
+        <li><img src="2.jpg"></li>
+        <li><img src="3.jpg"></li>
+    </ul>
+</div>
+
+<script>
+    var oDiv = document.getElementById("div1"),
+        oUl = oDiv.getElementsByTagName('ul')[0],
+        aLi = oUl.getElementsByTagName('li');
+
+    document.getElementsByTagName("button")[0].onclick = function () {
+        speed = 4;
+    };
+
+    document.getElementsByTagName("button")[1].onclick = function () {
+        speed = -4;
+    };
+    oUl.innerHTML += oUl.innerHTML;
+    //ul的宽度 =li的宽 * li的宽 就等于 想要宽 + px;
+    oUl.style.width = aLi[0].offsetWidth * aLi.length + "px";
+
+    function move() {
+        //图片每次 走 往左-2px,然后判断 当前的Left的位置 < Left/2的时候,复位到0;
+        oUl.offsetLeft < -oUl.offsetWidth / 2
+            ? oUl.style.left = '0'
+            : ' ';
+        oUl.offsetLeft > 0
+            ? oUl.style.left = -oUl.offsetWidth / 2 + 'px'
+            : ' ';
+        oUl.style.left = oUl.offsetLeft - speed + "px";
+    }
+
+    var timer = setInterval(move, 1000 / 60);
+
+    oDiv.onmouseover = function () {
+        clearInterval(timer);
+    };
+
+    oDiv.onmouseout = function () {
+        timer = setInterval(move, 1000 / 60);
+    };
+
+
+</script>
+</body>
+</html>

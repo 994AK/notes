@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="news-normal" class="section">
+    <h3>Some title</h3>
+    <div class="content">
+        <ul>
+            <li><span>HTML</span><a href="">Some Link1</a></li>
+            <li><span>HTML</span><a href="">Some Link2</a></li>
+            <li><span>JS</span><a class="active" href="#">Some Link3</a></li>
+            <li><span>CSS</span><a href="">Some Link4</a></li>
+        </ul>
+    </div>
+</div>
+    <script>
+
+        var oDiv = document.getElementById("news-normal");
+        var matche = oDiv.querySelector("div span");
+        console.log(matche);
+
+    </script>
+</body>
+</html>

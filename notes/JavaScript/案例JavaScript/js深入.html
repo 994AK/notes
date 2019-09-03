@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 函数的返回值 只能有一个.
+        /*
+         函数的返回值
+         -函数的执行结果
+         -可以没有return
+         -return把函数里面的东西往外跑~
+         -只能返回一种类型的值
+
+         函数传参
+         arguments它是一个数组存了所有的参数，可以直接循环让他对应每个参数。求和啊 等等都可以
+         arguments是一个可以让传参数遍历的玩意.
+         argunments 可变参，不定参就是个数组!! 可以循环 又有length
+
+         function css(obj,name,value) { //传参
+         if ( arguments.length == 2 ){ //参数遍历 [0,1,2]
+            return obj.style[name]; // 给两个参数获取样式
+         }else {
+            obj.style[name]=value; // 给三个参数 设置样式
+         }
+           }
+         var oDiv = document.getElementById("div1");
+         //alert(css(oDiv,"width")) // 返回值: obj=oDiv, style["width"]；
+         css(oDiv,'background','green'); //返回值 obj=oDiv, style["background"]=绿色；
+
+
+        取非行间的样式
+        IE版本    ID.currentStyle 取行间的函数
+        谷歌版本  getComputedStyle(ID,随便取).样式.
+        getComputedStyle与currentStyle 无法取复合样式只能取单一样式
+        用if做兼容 嘻嘻
+        复合样式：background等等
+        单一样式：宽度啊 高度啊 外边距 内边距 color 等等
+
+        数组：
+        获取数组 var arr = [12,5,6,7] //[]里面就是数组 不加'' "" 就是数组
+        arr的length可以让它变减号： arr.length = 3； // 12，5，6  只显示3个 后面那些被删除了
+        数组的length
+        - 可以获取，又可以设置
+        - 可以快速清空数组
+        创建数组：两种方法
+        - var arr = [12,2,3,4]//创建常规
+        - var arr = new Array(1，2，3) 创建数组
+
+        数组的方法：
+        添加列表
+        - push(元素)    尾部添加
+        - unshift(元素) 从头部添加
+        删除列表
+        - pop()    从尾部弹出 //不用加元素
+        - shift()  从头部弹出 //不加元素
+        比较简单。
+
+        插入、删除
+        插入
+        splice
+        -splice(开始，长度,元素...);
+        -先删除，后插入
+
+        删除：(只写 起点 长度 就是删除)
+        splice(起点，长度);
+        splice 分两步 先删除 后添加
+
+        数组连接、数组拼接
+        -concat(连接属性):
+         var arr = [1,2,3];
+         var arr1 = [4,5,6];
+         var x = arr.concat(arr1);// 1，2，3，4，5，6
+         万物皆可连~, 数组与数组的连接
+
+         数组的拼接
+         -join("需要拼接的字");
+         var arr = [1,2,3,4];
+         var arr1 = arr.join("-");//随便添加的
+         consloe.log(arr1)//1-2-3-4;
+         就是这么简单.
+
+         排序~
+         sort()默认的是排序，电脑浏览器会默认你是字符串排除处理。
+         sort()只是认识字符串
+         解决方案：
+         拿两个参数，告诉数组哪个大哪个小。
+         给sort加函数例如这样：
+         var arr = [12,8,99,66,55];
+         arr.sort(function(n1,n2){//定义两个参数
+              //告诉数组哪个大哪个小。
+              return n1 - n2;
+              //是不是感觉不可思议的~~
+              //如果 n1 - n2 的时候 是个负数 就往前扔
+              正数就往后扔，然后继续排序，如果小的话往前扔，大的往后扔
+         })
+
+
+         */
+
+        function show() {
+            return 12;
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

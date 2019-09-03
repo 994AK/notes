@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function ()
+        {
+            let oTxt = document.querySelector("#txt1"),
+                oBtn = document.querySelector("#btn1");
+
+            oBtn.onclick = function ()
+            {
+                oTxt.value = 123123
+            }
+        };
+    </script>
+</head>
+<body>
+<input type="text" id="txt1">
+<input type="button" id="btn1" value="按钮">
+</body>
+</html>

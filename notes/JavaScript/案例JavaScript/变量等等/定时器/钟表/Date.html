@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background: wheat;
+            font-size: 40px;
+            color: black;
+        }
+    </style>
+
+    <script>
+        function toDou(n) {
+            if (n < 10) {
+                return "0" + n;
+            } else {
+                return '' + n;
+            }
+        }
+        window.onload = function () {
+            var aImg = document.getElementsByTagName("img"),
+                aleng = aImg.length; //.length
+
+            function tick() {
+                var oDate = new Date(),//获取时间
+                    str = toDou(oDate.getHours())
+                        + toDou(oDate.getMinutes())
+                        + toDou(oDate.getSeconds());
+
+                for (var i = 0; i < aleng; i++) { //循环img
+                    aImg[i].src = str[i] + '.png'; // 0.png
+                }//循环END
+                setInterval(tick, 1000);
+            }//tick END
+                tick();
+        }//onload END
+
+    </script>
+</head>
+<body>
+<img src="0.png"/>
+<img src="0.png"/>
+:
+<img src="0.png"/>
+<img src="0.png"/>
+:
+<img src="0.png"/>
+<img src="0.png"/>
+</body>
+</html>

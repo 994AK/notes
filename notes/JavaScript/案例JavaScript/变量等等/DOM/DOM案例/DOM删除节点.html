@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>啊伟大时代 <a href="#">删除</a></li>
+    <li>日哇饿啊为<a href="#">删除</a></li>
+    <li>请问请问 <a href="#">删除</a></li>
+    <li>问请问   <a href="#">删除</a></li>
+</ul>
+<script>
+      let aA = document.querySelectorAll("a");
+      let oUl = document.querySelector("ul");
+
+      for (var i = 0; i<aA.length; i++){
+          aA[i].onclick=function ()
+          {
+              //删除父级.removeChild(父级.parentNode节点)
+              oUl.removeChild(this.parentNode);
+          }
+      }
+
+
+</script>
+</body>
+</html>

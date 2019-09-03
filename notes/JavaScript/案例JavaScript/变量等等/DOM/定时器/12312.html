@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css+js让背景图片动起来</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #section{
+            width: 800px;
+            height: 300px;
+            margin:0 auto;
+            background:url("123312.jpg");
+            background-position-x: 0px;
+            background-position-y: 0px;
+            background-repeat: repeat;
+            background-size:400px 300px;
+        }
+        .cover{
+            width: 100%;
+            height: 100%;
+            background:rgba(0,0,0,0.5);
+            position: relative;
+        }
+        .cover>h1{
+            color: #fff;
+            position:absolute;
+            top:183.5px;
+            left:314.5px;
+        }
+    </style>
+</head>
+<body>
+
+<section id="section">
+    <div class="cover">
+        <h1>WELL IS DONE</h1>
+    </div>
+</section>
+
+<script>
+   
+   var section = document.getElementById("section")
+    var x =0;
+    function polling() {
+        x += 5;
+        section.animate({
+            'background-position-x': x+'%',
+        }, 400, 'linear');
+        setTimeout(polling,300)
+    }
+
+    polling();
+</script>
+
+</body>
+</html>

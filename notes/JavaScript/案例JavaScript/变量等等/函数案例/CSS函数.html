@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <div id="div1" style="width: 200px;height: 200px;background: red;">
+
+ </div>
+<script>
+    function css(obj,name,value) { //传参
+        if ( arguments.length == 2 ){
+            return obj.style[name];
+        }else {
+            obj.style[name]=value;
+        }
+    }
+    var oDiv = document.getElementById("div1");
+
+    //alert(css(oDiv,"width")) // 返回值: obj=oDiv, style["width"]；
+    css(oDiv,'background','green'); //返回值 obj=oDiv, style["background"]=绿色；
+
+</script>
+</body>
+</html>

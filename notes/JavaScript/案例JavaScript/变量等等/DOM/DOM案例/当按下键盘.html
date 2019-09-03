@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function ()
+        {
+            var Text = document.querySelector("#name"),
+                oBtn = document.querySelector("#submit-btn"),
+                oP = document.querySelector("#p1");
+
+            oBtn.onclick= function ()
+            {
+                oP.innerHTML= Text.value;
+            };
+
+           Text.onkeydown = function (e) {
+               e =  e || window.e;
+//ENT 13
+               //ESC27
+               //空格32
+              if (e.keyCode === 13){
+                  oP.innerHTML+=`<br/>${Text.value}`;
+                  Text.value="";
+              }else if(e.keyCode === 27){
+                  Text.value="";
+              }
+
+           }
+        }
+
+    </script>
+</head>
+<body>
+<input id="name" type="text">
+<button id="submit-btn">Submit</button>
+<p id="p1"></p>
+</body>
+</html>

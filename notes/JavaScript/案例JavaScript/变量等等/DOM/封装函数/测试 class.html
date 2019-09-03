@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="ul1">
+    <li class="box"></li>
+    <li></li>
+    <li class="box"></li>
+    <li></li>
+</ul>
+<script src="class.js"></script>
+<script>
+    var oUl = document.querySelector("#ul1"),
+        aBox = getByClass(oUl,"box");
+    for (var i = 0 ; i < aBox.length;i++){
+        aBox[i].style.background = 'red';
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h5>Original content</h5>
+    <p>
+        inside paragraph
+        <span>inside span</span>
+        inside paragraph
+    </p>
+</div>
+<div>
+    <h5>Output</h5>
+    <div id="output"></div>
+</div>
+
+<script>
+    //获取p的值
+    const oDiv = document.querySelector("p");
+    //获取 div的值 修改div的innerHTML 定义在 div span里面的内容过来
+    document.getElementById("output").innerHTML=
+        (oDiv.querySelector("div span").innerHTML)
+
+</script>
+</body>
+</html>
